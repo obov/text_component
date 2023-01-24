@@ -7,7 +7,7 @@ ease apply css on text with Tailwind and Typescript
 
 ## 사용방법 - 주요 코드는 `text.tsx`에 모두 포함되어있습니다.
 
-    1. `text.tsx` 의 `vaiants` 값과 `SEPERATOR` `SIZE`, `WEIGHT`, `COLOR` 값을 필요에 따라 수정하여 세팅할 수 있습니다.
+1. `text.tsx` 의 `vaiants` 값과 `SEPERATOR` `SIZE`, `WEIGHT`, `COLOR` 값을 필요에 따라 수정하여 세팅할 수 있습니다.
 
 ```typescript
 const variants = {
@@ -38,7 +38,7 @@ const WEIGHT = "weight";
 const COLOR = "color";
 ```
 
-    2. 직접 호출하는 경우 `variant` 값을 작성할 때 몇글자만 입력해도 모든 조합의 자동완성이 호출됩니다. 입력하려는 앞글자 한두개씩만 입력하면 작성이 완료됩니다.
+2. 직접 호출하는 경우 `variant` 값을 작성할 때 몇글자만 입력해도 모든 조합의 자동완성이 호출됩니다. 입력하려는 앞글자 한두개씩만 입력하면 작성이 완료됩니다.
 
 ```typescript
      <Text variant="exSmall / exBold / accent">테일윈드 사용 시</Text>
