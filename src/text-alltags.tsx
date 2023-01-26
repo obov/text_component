@@ -1,12 +1,19 @@
+const SIZE = "size";
+const WEIGHT = "weight";
+const COLOR = "color";
+const DEFAULT = "default";
+
 const variants = {
-  size: {
+  [SIZE]: {
+    [DEFAULT]: ["base", "-"],
     exSmall: "text-xs",
     small: "text-sm",
     base: "text-base",
     large: "text-lg",
     exLarge: "text-xl",
   },
-  weight: {
+  [WEIGHT]: {
+    [DEFAULT]: ["medium", "*"],
     light: "font-light",
     normal: "font-normal",
     medium: "font-medium",
@@ -14,17 +21,15 @@ const variants = {
     bold: "font-bold",
     exBold: "font-extrabold",
   },
-  color: {
+  [COLOR]: {
+    [DEFAULT]: ["primary", ""],
     primary: "text-emerald-600",
     secondary: "text-amber-400",
     accent: "text-rose-400",
   },
-};
+} as const;
 
 const SEPERATOR = " / ";
-const SIZE = "size";
-const WEIGHT = "weight";
-const COLOR = "color";
 
 // 위쪽의 변수를 수정해주세요
 
@@ -32,10 +37,13 @@ type Seperator = typeof SEPERATOR;
 type Size = typeof SIZE;
 type Weight = typeof WEIGHT;
 type Color = typeof COLOR;
+type Default = typeof DEFAULT;
 
 type Values<T> = T[keyof T];
 type Variants = {
-  [key in keyof typeof variants]: keyof typeof variants[key];
+  [key in keyof typeof variants]:
+    | keyof Omit<typeof variants[key], Default>
+    | typeof variants[key][Default][1];
 };
 type VariantProps =
   `${Variants[Size]}${Seperator}${Variants[Weight]}${Seperator}${Variants[Color]}`;
@@ -45,7 +53,17 @@ const variantSpliter = (variantProps: VariantProps) => {
   return { size, weight, color } as Variants;
 };
 const twClassMapper = ({ size, weight, color }: Variants) => {
-  return [variants.size[size], variants.weight[weight], variants.color[color]];
+  return [
+    size === variants.size[DEFAULT][1]
+      ? variants.size[variants.size[DEFAULT][0]]
+      : variants.size[size],
+    weight === variants.weight[DEFAULT][1]
+      ? variants.weight[variants.weight[DEFAULT][0]]
+      : variants.weight[weight],
+    color === variants.color[DEFAULT][1]
+      ? variants.color[variants.color[DEFAULT][0]]
+      : variants.color[color],
+  ];
 };
 const classNameMaker = (...classes: (string | undefined)[]) =>
   classes.filter((e) => e).join(" ");
