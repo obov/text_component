@@ -1,8 +1,13 @@
+// 수정 해도 사용하는데 변경사항은 발생하지 않는 변수입니다.
+
 const SIZE = "size";
 const WEIGHT = "weight";
 const COLOR = "color";
 const DEFAULT = "default";
 
+// SEPERATOR 와 variants 를 필요에 따라 변경하여 사용해주세요
+
+const SEPERATOR = " / ";
 const variants = {
   [SIZE]: {
     [DEFAULT]: ["base", "-"],
@@ -28,8 +33,6 @@ const variants = {
     accent: "text-rose-400",
   },
 } as const;
-
-const SEPERATOR = " / ";
 
 // 위쪽의 변수를 수정해주세요
 
