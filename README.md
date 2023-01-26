@@ -6,7 +6,7 @@ ease apply css on text with Tailwind and Typescript
 - [테일윈드](https://tailwindcss.com/)에 대한 가벼운 이해만 있다면 활용해볼 수 있습니다.
 - 클래스 / 클래스네임 (문자열) 을 사용하여 css를 적용하는 경우 테일윈드를 사용하지 않아도 적용가능합니다. 그렇게 생각해보자면 타입스크립트를 사용하는 꽤나 많은 프로젝트에 적용해볼수 있는 방식이라고 생각합니다.
 
-## 사용방법 - 주요 코드는 `Text.tsx``text-alltag.tsx`에 모두 포함되어있습니다.
+## 사용방법 - 주요 코드는 `Text.tsx` `text-alltag.tsx`에 모두 포함되어있습니다.
 
 1. `text.tsx` 의 `vaiants` 값과 `SEPERATOR` `SIZE`, `WEIGHT`, `COLOR` 값을 필요에 따라 수정하여 세팅할 수 있습니다.
 
