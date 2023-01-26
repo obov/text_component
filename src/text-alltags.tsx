@@ -70,11 +70,11 @@ const classNameMaker = (...classes: (string | undefined)[]) =>
 
 const text = {
   a: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -85,16 +85,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </a>
     );
   },
   abbr: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -105,16 +105,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </abbr>
     );
   },
   address: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -125,16 +125,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </address>
     );
   },
   area: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -145,16 +145,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </area>
     );
   },
   article: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -165,16 +165,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </article>
     );
   },
   aside: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -185,16 +185,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </aside>
     );
   },
   audio: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -205,16 +205,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </audio>
     );
   },
   b: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -225,16 +225,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </b>
     );
   },
   base: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -245,16 +245,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </base>
     );
   },
   bdi: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -265,16 +265,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </bdi>
     );
   },
   bdo: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -285,16 +285,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </bdo>
     );
   },
   big: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -305,16 +305,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </big>
     );
   },
   blockquote: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -325,16 +325,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </blockquote>
     );
   },
   body: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -345,16 +345,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </body>
     );
   },
   br: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -365,16 +365,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </br>
     );
   },
   button: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -385,16 +385,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </button>
     );
   },
   canvas: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -405,16 +405,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </canvas>
     );
   },
   caption: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -425,16 +425,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </caption>
     );
   },
   center: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -445,16 +445,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </center>
     );
   },
   cite: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -465,16 +465,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </cite>
     );
   },
   code: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -485,16 +485,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </code>
     );
   },
   col: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -505,16 +505,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </col>
     );
   },
   colgroup: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -525,16 +525,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </colgroup>
     );
   },
   data: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -545,16 +545,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </data>
     );
   },
   datalist: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -565,16 +565,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </datalist>
     );
   },
   dd: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -585,16 +585,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </dd>
     );
   },
   del: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -605,16 +605,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </del>
     );
   },
   details: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -625,16 +625,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </details>
     );
   },
   dfn: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -645,16 +645,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </dfn>
     );
   },
   dialog: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -665,16 +665,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </dialog>
     );
   },
   div: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -685,16 +685,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </div>
     );
   },
   dl: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -705,16 +705,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </dl>
     );
   },
   dt: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -725,16 +725,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </dt>
     );
   },
   em: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -745,16 +745,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </em>
     );
   },
   embed: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -765,16 +765,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </embed>
     );
   },
   fieldset: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -785,16 +785,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </fieldset>
     );
   },
   figcaption: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -805,16 +805,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </figcaption>
     );
   },
   figure: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -825,16 +825,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </figure>
     );
   },
   footer: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -845,16 +845,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </footer>
     );
   },
   form: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -865,16 +865,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </form>
     );
   },
   h1: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -885,16 +885,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </h1>
     );
   },
   h2: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -905,16 +905,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </h2>
     );
   },
   h3: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -925,16 +925,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </h3>
     );
   },
   h4: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -945,16 +945,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </h4>
     );
   },
   h5: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -965,16 +965,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </h5>
     );
   },
   h6: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -985,16 +985,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </h6>
     );
   },
   head: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1005,16 +1005,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </head>
     );
   },
   header: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1025,16 +1025,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </header>
     );
   },
   hgroup: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1045,16 +1045,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </hgroup>
     );
   },
   hr: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1065,16 +1065,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </hr>
     );
   },
   html: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1085,16 +1085,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </html>
     );
   },
   i: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1105,16 +1105,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </i>
     );
   },
   iframe: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1125,16 +1125,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </iframe>
     );
   },
   img: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1145,16 +1145,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </img>
     );
   },
   input: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1165,16 +1165,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </input>
     );
   },
   ins: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1185,16 +1185,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </ins>
     );
   },
   kbd: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1205,16 +1205,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </kbd>
     );
   },
   keygen: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1225,16 +1225,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </keygen>
     );
   },
   label: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1245,16 +1245,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </label>
     );
   },
   legend: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1265,16 +1265,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </legend>
     );
   },
   li: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1285,16 +1285,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </li>
     );
   },
   link: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1305,16 +1305,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </link>
     );
   },
   main: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1325,16 +1325,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </main>
     );
   },
   map: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1345,16 +1345,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </map>
     );
   },
   mark: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1365,16 +1365,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </mark>
     );
   },
   menu: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1385,16 +1385,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </menu>
     );
   },
   menuitem: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1405,16 +1405,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </menuitem>
     );
   },
   meta: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1425,16 +1425,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </meta>
     );
   },
   meter: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1445,16 +1445,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </meter>
     );
   },
   nav: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1465,16 +1465,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </nav>
     );
   },
   noindex: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1485,16 +1485,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </noindex>
     );
   },
   noscript: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1505,16 +1505,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </noscript>
     );
   },
   object: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1525,16 +1525,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </object>
     );
   },
   ol: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1545,16 +1545,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </ol>
     );
   },
   optgroup: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1565,16 +1565,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </optgroup>
     );
   },
   option: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1585,16 +1585,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </option>
     );
   },
   output: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1605,16 +1605,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </output>
     );
   },
   p: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1625,16 +1625,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </p>
     );
   },
   param: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1645,16 +1645,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </param>
     );
   },
   picture: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1665,16 +1665,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </picture>
     );
   },
   pre: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1685,16 +1685,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </pre>
     );
   },
   progress: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1705,16 +1705,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </progress>
     );
   },
   q: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1725,16 +1725,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </q>
     );
   },
   rp: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1745,16 +1745,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </rp>
     );
   },
   rt: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1765,16 +1765,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </rt>
     );
   },
   ruby: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1785,16 +1785,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </ruby>
     );
   },
   s: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1805,16 +1805,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </s>
     );
   },
   samp: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1825,16 +1825,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </samp>
     );
   },
   slot: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1845,16 +1845,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </slot>
     );
   },
   script: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1865,16 +1865,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </script>
     );
   },
   section: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1885,16 +1885,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </section>
     );
   },
   select: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1905,16 +1905,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </select>
     );
   },
   small: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1925,16 +1925,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </small>
     );
   },
   source: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1945,16 +1945,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </source>
     );
   },
   span: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1965,16 +1965,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </span>
     );
   },
   strong: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -1985,16 +1985,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </strong>
     );
   },
   style: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2005,16 +2005,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </style>
     );
   },
   sub: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2025,16 +2025,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </sub>
     );
   },
   summary: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2045,16 +2045,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </summary>
     );
   },
   sup: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2065,16 +2065,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </sup>
     );
   },
   table: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2085,16 +2085,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </table>
     );
   },
   template: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2105,16 +2105,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </template>
     );
   },
   tbody: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2125,16 +2125,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </tbody>
     );
   },
   td: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2145,16 +2145,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </td>
     );
   },
   textarea: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2165,16 +2165,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </textarea>
     );
   },
   tfoot: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2185,16 +2185,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </tfoot>
     );
   },
   th: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2205,16 +2205,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </th>
     );
   },
   thead: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2225,16 +2225,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </thead>
     );
   },
   time: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2245,16 +2245,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </time>
     );
   },
   title: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2265,16 +2265,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </title>
     );
   },
   tr: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2285,16 +2285,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </tr>
     );
   },
   track: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2305,16 +2305,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </track>
     );
   },
   u: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2325,16 +2325,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </u>
     );
   },
   ul: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2345,16 +2345,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </ul>
     );
   },
   var: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2365,16 +2365,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </var>
     );
   },
   video: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2385,16 +2385,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </video>
     );
   },
   wbr: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2405,16 +2405,16 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </wbr>
     );
   },
   webview: ({
-    children,
+    value,
     variant,
     className,
   }: {
-    children: string;
+    value: string;
     variant: VariantProps;
     className?: string;
   }) => {
@@ -2425,7 +2425,7 @@ const text = {
           className
         )}
       >
-        {children}
+        {value}
       </webview>
     );
   },
