@@ -1,3 +1,4 @@
+import { createContext } from "react";
 // 수정 해도 사용하는데 변경사항은 발생하지 않는 변수입니다.
 
 const SIZE = "size";
@@ -7,10 +8,43 @@ const DEFAULT = "default";
 
 // SEPERATOR 와 variants 를 필요에 따라 변경하여 사용해주세요
 
+type Defaults = {
+  [key in Size | Weight | Color]: string;
+};
+interface VariantsDetails {
+  [key: string]: string;
+}
+type plz = {
+  [key in "default"]: [string, string];
+};
+type what<T> = T extends Default ? number : string;
+type fuck = what<Default>;
+
+type vars<
+  S = VariantsDetails,
+  W = VariantsDetails,
+  C = VariantsDetails
+> = Readonly<{
+  size: S;
+  weight: W;
+  color: C;
+  default?: {
+    size?: string;
+    weight?: string;
+    color?: string;
+  };
+}>;
+
+type VariantsDetailsWithDefauls = Defaults & VariantsDetails;
+type UseTest<T = vars> = (vaiant: T) => T;
+
 const SEPERATOR = " / ";
-const variants = {
+export const useTest: UseTest = (vaiant) => {
+  return vaiant;
+};
+export const variants = {
   [SIZE]: {
-    [DEFAULT]: ["base", "-"],
+    [DEFAULT]: ["base", "- "],
     exSmall: "text-xs",
     small: "text-sm",
     base: "text-base",
@@ -33,7 +67,7 @@ const variants = {
     accent: "text-rose-400",
   },
 } as const;
-
+export const ThemeContext = createContext(variants);
 // 위쪽의 변수를 수정해주세요
 
 type Seperator = typeof SEPERATOR;
